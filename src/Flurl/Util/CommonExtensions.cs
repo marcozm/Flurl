@@ -6,7 +6,7 @@ using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Text.RegularExpressions;
 
-[assembly: InternalsVisibleTo("Flurl.Http")]
+[assembly: InternalsVisibleTo("Flurl.Http, PublicKey=002400000480000094000000060200000024000052534131000400000100010019d7e6923109a9aa31847806683533c34fae9b1363ec84ac143637252db2df219942b29877064d840f5e716ac7ef230863ff98743a8490e993cf84fb0c03e0d8095e8afba757a87f7ab9408879ca6ea7efaef7c09e65e23eabd4b378941df08626b0b562d62b484faa6bce7f8a306b6952b5294bb80e73275f987672435726e1")]
 
 namespace Flurl.Util
 {

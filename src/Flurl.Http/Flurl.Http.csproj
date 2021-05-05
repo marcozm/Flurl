@@ -2,7 +2,7 @@
   <PropertyGroup>
     <TargetFrameworks>netstandard2.0;net461;net472</TargetFrameworks>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-    <PackageId>Flurl.Http</PackageId>
+    <PackageId>Flurl.Http.Signed</PackageId>
     <Version>3.2.0</Version>
     <Authors>Todd Menier</Authors>
     <Description>A fluent, portable, testable HTTP client library.</Description>
@@ -23,6 +23,11 @@
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
   </PropertyGroup>
 
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>Flurl.Http.snk</AssemblyOriginatorKeyFile>	
+  </PropertyGroup>
+
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
     <DocumentationFile>bin\Release\Flurl.xml</DocumentationFile>
   </PropertyGroup>
@@ -34,7 +39,7 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.0.0" PrivateAssets="All"/>
     <PackageReference Include="Newtonsoft.Json" Version="12.0.2" />
-    <PackageReference Include="Flurl" Version="3.0.2" />
+    <PackageReference Include="Flurl.Signed" Version="3.0.2" />
     <None Include="..\..\icon.png" Pack="true" PackagePath="\"/>
   </ItemGroup>
 
